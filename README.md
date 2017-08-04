@@ -1,2 +1,2 @@
-Machine Learning Present by Jianan@Ericson/Combitech in Göteborg, Sweden
+Machine Learning Present by Jianan@Ericsson/Combitech in Göteborg, Sweden
 ==========
