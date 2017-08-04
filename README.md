@@ -1,2 +1,2 @@
-chisyliu_1
+Machine Learning Present by Jianan@Ericson/Combitech in Göteborg, Sweden
 ==========
