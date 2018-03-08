@@ -1,2 +1,7 @@
-Machine Learning Present by Jianan@Ericsson/Combitech in Göteborg, Sweden
+Machine Learning Present by Jianan in Sweden
 ==========
+本团队承接各种留学咨询业务。包括但不限于留学国家，学校，专业（特别是EE, CS相关专业），项目，课程选择与留学后的继续深造（读博），当地实习，就业规划
+
+针对每个人不同背景提供最专业的建议。团队成员均有澳洲，新加坡，英国，欧洲各国，加拿大，美国多国留学与工作经验，现分布在英国，美国，澳洲，德国，荷兰，瑞典，以及新加坡工作。
+
+**欢迎微信chisyliu咨询**，为你的留学规划一条最大概率（至少是根据当前已知的信息和观测的数据，极大似然）符合你期望的轨迹
