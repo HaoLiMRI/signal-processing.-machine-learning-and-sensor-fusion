@@ -241,15 +241,15 @@ class ResNeXt34(nn.Module):                   #----- Define a Net class as deriv
         nn.MaxPool2d(kernel_size = 3, stride = 2, padding = 1))
         
         "declaration of the rest parts which consist of residual blocks"
-        self.part1 = self.make_residual_part(Residual_Block_Type, 64, 64, 3, 32)
+        self.part1 = self.make_residual_part(Residual_Block_Type, 64, 64, 3, 32, gate_in_use = False)
         self.part2 = self.make_residual_part(Residual_Block_Type, 64, 128, 4, 32, stride = 2)
         self.part3 = self.make_residual_part(Residual_Block_Type, 128, 256, 6, 32, stride = 2)
-        self.part4 = self.make_residual_part(Residual_Block_Type, 256, 512, 3, 32, stride = 2)
+        self.part4 = self.make_residual_part(Residual_Block_Type, 256, 512, 3, 32, stride = 2, gate_in_use = True)
         
         "fully connected layers as classifier"
         self.fc = nn.Linear(in_features = 512, out_features = num_classes)
 
-    def make_residual_part(self, Residual_Block_Type, number_in_channel, number_out_channel, number_of_residual_blocks, num_of_group, stride = 1, padding = 0):
+    def make_residual_part(self, Residual_Block_Type, number_in_channel, number_out_channel, number_of_residual_blocks, num_of_group, stride = 1, padding = 0, gate_in_use = True, EPSILON = 1):
         linear_projection = None        
         if (stride != 1) or (number_in_channel != number_out_channel): 
         #----- in case the stride is NOT 1, or number_in_channel is NOT same as number_out_channel, adapte the size and number of out channel of residual link
@@ -258,9 +258,9 @@ class ResNeXt34(nn.Module):                   #----- Define a Net class as deriv
                     nn.BatchNorm2d(number_out_channel))
             
         parts = []
-        parts.append(Residual_Block_Type(number_in_channel, number_out_channel, stride, linear_projection, num_of_group))
+        parts.append(Residual_Block_Type(number_in_channel, number_out_channel, stride, linear_projection, num_of_group, gate_in_use, EPSILON))
         for i in range(1, number_of_residual_blocks):
-            parts.append(Residual_Block_Type(number_out_channel, number_out_channel, num_of_group = num_of_group))
+            parts.append(Residual_Block_Type(number_out_channel, number_out_channel, num_of_group = num_of_group, gate_in_use = gate_in_use, EPSILON = EPSILON))
         return nn.Sequential(*parts) #----- iteratively pass each element in the list, see https://stackoverflow.com/questions/3480184/unpack-a-list-in-python for detail
         
     "All the forward propagation behavier is implemented in this function"
