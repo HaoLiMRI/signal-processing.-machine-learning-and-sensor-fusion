@@ -230,7 +230,7 @@ class ResNeXt34(nn.Module):                   #----- Define a Net class as deriv
         parts = []
         parts.append(Residual_Block_Type(number_in_channel, number_out_channel, stride, linear_projection, num_of_group))
         for i in range(1, number_of_residual_blocks):
-            parts.append(Residual_Block_Type(number_out_channel, number_out_channel))
+            parts.append(Residual_Block_Type(number_out_channel, number_out_channel, num_of_group = num_of_group))
         return nn.Sequential(*parts) #----- iteratively pass each element in the list, see https://stackoverflow.com/questions/3480184/unpack-a-list-in-python for detail
         
     "All the forward propagation behavier is implemented in this function"
