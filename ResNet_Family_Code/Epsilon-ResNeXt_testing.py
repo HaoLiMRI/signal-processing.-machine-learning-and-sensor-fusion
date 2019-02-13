@@ -4,7 +4,7 @@
 Epsilon-ResNeXt Classifier
 """
 """
-Author: jianan.liu@aptiv.com
+Author: jianan.liu
 Version: 1.0.0
 """
 "-------------------------------------------------------------------------------------------------"
