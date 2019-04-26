@@ -9,3 +9,9 @@ SENet(Sequeeze-and-Excitation)
 ShuffleNet
 
 MnasNet
+
+Binarized Neural Networks
+
+Ternary Neural Networks
+
+
