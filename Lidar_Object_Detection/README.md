@@ -1,4 +1,4 @@
-I plan to add the code for
+I plan to add the code for commonly used approaches in deep learning detection(localization in 3D "image" and classification) with lidar
 
 PointNet(paper: http://stanford.edu/~rqi/pointnet/)
 
