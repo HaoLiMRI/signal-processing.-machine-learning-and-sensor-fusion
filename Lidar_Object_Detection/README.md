@@ -2,7 +2,7 @@ I plan to add the code for commonly used approaches in deep learning detection(l
 
 VoxelNet(paper: https://arxiv.org/abs/1711.06396)
 
-PIXOR()
+PIXOR(paper: https://arxiv.org/abs/1902.06326)
 
 BirdNet
 
