@@ -12,4 +12,6 @@ PointNet++
 
 PointRCNN
 
+VoteNet(paper: https://arxiv.org/abs/1904.09664)
+
 
