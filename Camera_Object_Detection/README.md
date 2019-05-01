@@ -1,6 +1,6 @@
 I plan to add the code for commonly used approaches in deep learning detection(localization in image and classification) with camera
 
-Two Stage Approach: RCNN families(Mask-RCNN, Fast-RCNN, Faster-RCNN)
+Two Stage Approach: RCNN families(Mask-RCNN, Fast-RCNN, Faster-RCNN), ThunderNet(lightweight two-stage detector, paper: https://arxiv.org/abs/1903.11752)
 
 One Stage Approach: YOLO families(YOLO v1, v2, v3), SSD, FPN
 
