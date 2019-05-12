@@ -4,6 +4,8 @@ PointNet(paper: http://stanford.edu/~rqi/pointnet/)
 
 PointNet++
 
+Frustum PointNet
+
 VoxelNet(paper: https://arxiv.org/abs/1711.06396)
 
 BirdNet(paper: https://arxiv.org/abs/1805.01195)
