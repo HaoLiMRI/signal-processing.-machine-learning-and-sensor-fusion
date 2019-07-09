@@ -23,3 +23,5 @@ https://blog.csdn.net/gdymind/article/details/82388068
 https://blog.csdn.net/g11d111/article/details/82855946
 
 https://github.com/chisyliu/SRGAN-2/blob/master/model.py
+
+http://cs231n.github.io/convolutional-networks/#architectures
