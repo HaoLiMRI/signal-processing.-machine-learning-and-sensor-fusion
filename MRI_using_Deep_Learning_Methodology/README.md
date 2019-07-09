@@ -17,3 +17,7 @@ https://github.com/chisyliu/PyTorch-SRGAN
 
 
 https://blog.csdn.net/gwplovekimi/article/details/84765876
+
+https://blog.csdn.net/gdymind/article/details/82388068
+
+https://blog.csdn.net/g11d111/article/details/82855946
